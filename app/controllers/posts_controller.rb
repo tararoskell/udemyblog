@@ -1,26 +1,31 @@
 class PostsController < ApplicationController
   def index
-    @content_first = "This is sample text for our Ruby Blog"
-    @content_second = "This is some sample text for the blog. Just some gobbledygook"
-  end
-  
-  def new
-    
-  end
-  
-  def create
-    
-  end
-  
-  def edit
-    
-  end
-  
-  def update
-    
+    @posts = Post.all
   end
   
   def show
+    @post = Post.find(params[:id])
+  end
+  
+  def new
+    @post = Post.new
+    @category = Category.all
+  end
+  
+  def create
+    @post = Post.new(params[:post])
+    if @post.save
+      redirect_to posts_path, :notice => "your post has been saved"
+    else
+      render "new"
+    end
+  end
+  
+  def edit
+     @post = Post.find(params[:id])
+  end
+  
+  def update
     
   end
   

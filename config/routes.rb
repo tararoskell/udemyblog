@@ -1,7 +1,16 @@
 Udemyblog::Application.routes.draw do
+  get "categories/index"
+
+  get "categories/edit"
+
+  get "categories/new"
+
+  get "categories/show"
+
   get "home/index"
   root :to => 'home#index'
   resources :posts
+  resources :categories
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
