@@ -3,6 +3,8 @@
 <% @posts.each do |post| %>
 <h3><%= link_to post.title, post %></h3>
 <p><%= post.body %></p>
+<%= link_to 'Edit', edit_post_path(post) %>
 <hr>
-<% end %><br />
+<% end %>
+<br />
 <%= link_to "Add a New Post", new_post_path %>

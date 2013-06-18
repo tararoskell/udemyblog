@@ -6,7 +6,6 @@ Udemyblog::Application.routes.draw do
   get "categories/new"
 
   get "categories/show"
-
   get "home/index"
   root :to => 'home#index'
   resources :posts
