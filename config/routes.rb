@@ -1,4 +1,13 @@
 Udemyblog::Application.routes.draw do
+  get "pages/about"
+
+  get "pages/contact"
+
+  get "pages/resources"
+
+  resources :users
+
+
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   get "categories/index"
@@ -9,9 +18,13 @@ Udemyblog::Application.routes.draw do
 
   get "categories/show"
   get "home/index"
-  root :to => 'home#index'
+ 
   resources :posts
   resources :categories
+  match "/about", :to => "pages#about"
+  match "/resources", :to => "pages#resources"
+  match "/contact", :to => "pages#contact"
+  root :to => 'home#index'
 
 
 

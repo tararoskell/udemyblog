@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Udemyblog</title>
+  <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+
+
+
+
+
+
+<!-- this is a load of html from the other page -->
+
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#">My Ruby Blog</a></h1>
+				<p>Learning Ruby on Rails</p>
+			</div>
+			<div id="menu">
+				<ul class = "main_nav">
+					<li><%= link_to "Home", root_path %> </li>
+					<li><%= link_to "About", about_path %> </li>
+					<li><%= link_to "Blog", posts_path %> </li>
+					<li><%= link_to "Contact", contact_path %> </li>
+					<li><%= link_to  "Resources", resources_path %> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
