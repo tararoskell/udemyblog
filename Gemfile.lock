@@ -152,6 +152,7 @@ DEPENDENCIES
   activeadmin
   coffee-rails (~> 3.2.1)
   jquery-rails (= 2.3.0)
+  meta_search
   pg
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

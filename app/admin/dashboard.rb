@@ -5,8 +5,9 @@ section "Recent Post", :priority => 1 do
     column "Post Title", :title do |post|
       link_to post.title, [:admin,post]
     end
-    column :category, :sortable => :category
-    column :created_at  
+  column "Author", :admin_user   
+  column :category, :sortable => :category
+  column :created_at  
   end
   strong {link_to "Show All Posts", :admin_posts }
 end
@@ -21,3 +22,4 @@ section "Categories" do
   strong {link_to "Show All Categories", :admin_categories }
 end
 end
+

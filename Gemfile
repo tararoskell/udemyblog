@@ -14,6 +14,7 @@ group :development, :test do
 end
 
 gem 'activeadmin'
+gem 'meta_search'
 gem "jquery-rails", "2.3.0"
 
 # Gems used only for assets and not required

@@ -1,4 +1,7 @@
 Udemyblog::Application.routes.draw do
+  resources :post_comments
+
+
   get "pages/about"
 
   get "pages/contact"

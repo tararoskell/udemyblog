@@ -365,8 +365,12 @@ a:hover {
 
 #sidebar a:hover {
 	text-decoration: underline;
-	color: #847F7E;
+	color: #847F7E;}
+	
+#search input[type="text"]{
+	width: 180px;
 }
+
 
 /* Calendar */
 
