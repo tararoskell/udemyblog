@@ -13,7 +13,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-gem "activeadmin", :git => "git://github.com/gregbell/active_admin.git"
+gem "activeadmin"
 gem 'meta_search'
 gem "jquery-rails", "2.3.0"
 
